@@ -14,7 +14,7 @@ resource "null_resource" "provisioner" {
   provisioner "remote-exec" {
 
     connection {
-      host     = aws_instance.ec2.public_ip
+      host     = aws_instance.ec2.private_ip
       user     = "ansibleadm"
       password = "adm123"
     }
