@@ -15,8 +15,8 @@ resource "null_resource" "provisioner" {
 
     connection {
       host     = aws_instance.ec2.public_ip
-      user     = "centos"
-      password = "DevOps321"
+      user     = "ansibleadm"
+      password = "adm123"
     }
 
     inline = [
