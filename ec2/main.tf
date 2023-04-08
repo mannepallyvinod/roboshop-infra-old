@@ -1,7 +1,7 @@
 resource "aws_instance" "ec2" {
   ami                    = data.aws_ami.ami.image_id
   instance_type          = var.instance_type
-  vpc_security_group_ids = ["sg-0897baab57e697dc2"]
+  vpc_security_group_ids = ["sg-00a12c65e5ab1a22e"]
   iam_instance_profile   = "${var.env}-${var.component}-role"
   tags = {
     Name    = var.component
