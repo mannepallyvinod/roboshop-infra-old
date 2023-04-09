@@ -14,7 +14,7 @@ resource "null_resource" "provisioner" {
   provisioner "remote-exec" {
 
     connection {
-      host     = aws_instance.ec2.private_ip
+      host     = aws_instance.ec2.public_ip
       user     = "ansibleadm"
       password = "adm123"
     }
@@ -55,7 +55,7 @@ resource "aws_security_group" "sg" {
 
 resource "aws_route53_record" "record" {
   zone_id = "Z0397602EV9MAX3F1W8E"
-  name    = "${var.component}-dev.devopsb71services.site"
+  name    = "${var.component}-dev.deepdivers.xyz"
   type    = "A"
   ttl     = 30
   records = [aws_instance.ec2.private_ip]
