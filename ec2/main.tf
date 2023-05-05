@@ -15,8 +15,8 @@ resource "null_resource" "provisioner" {
 
     connection {
       host     = aws_instance.ec2.public_ip
-      user     = "ansibleadm"
-      password = "adm123"
+      user     = "Centos"
+      password = "DevOps321"
     }
 
     inline = [
@@ -54,7 +54,7 @@ resource "aws_security_group" "sg" {
 }
 
 resource "aws_route53_record" "record" {
-  zone_id = "Z0397602EV9MAX3F1W8E"
+  zone_id = "Z036570710WISM5F6QT7N"
   name    = "${var.component}-dev.deepdivers.xyz"
   type    = "A"
   ttl     = 30
