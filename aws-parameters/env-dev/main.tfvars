@@ -10,7 +10,7 @@ parameters = [
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.deepdivers.xyz:27017/catalogue", type = "String" },
 
   { name = "dev.shipping.cart_endpoint", value = "cart-dev.deepdivers.xyz:8080", type = "String" },
-  { name = "dev.shipping.db_host", value = "mysql-dev.devopsb71services.site", type = "String" },
+  { name = "dev.shipping.db_host", value = "mysql-dev.deepdivers.xyz", type = "String" },
 
   { name = "dev.payment.cart_host", value = "cart-dev.deepdivers.xyz", type = "String" },
   { name = "dev.payment.cart_port", value = "8080", type = "String" },
@@ -23,7 +23,7 @@ parameters = [
   { name = "dev.catalogue.mongo", value = "true", type = "String" },
   { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.deepdivers.xyz:27017/catalogue", type = "String" },
 
-  { name = "dev.cart.redis_host", value = "redis-dev.devopsb71services.site", type = "String" },
+  { name = "dev.cart.redis_host", value = "redis-dev.deepdivers.xyz", type = "String" },
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.deepdivers.xyz", type = "String" },
   { name = "dev.cart.catalogue_port", value = "8080", type = "String" }
 ]

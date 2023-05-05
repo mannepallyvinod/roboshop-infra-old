@@ -1,3 +1,3 @@
-bucket = "terraform-deepdivers-services-site"
+bucket = "deepdiversbucket"
 key    = "dev/infra/terraform.tfstate"
 region = "us-east-1"
