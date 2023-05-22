@@ -54,7 +54,7 @@ resource "aws_security_group" "sg" {
 }
 
 resource "aws_route53_record" "record" {
-  zone_id = "Z036570710WISM5F6QT7N"
+  zone_id = "Z06529613JUJNBJ5V4LB6"
   name    = "${var.component}-dev.deepdivers.xyz"
   type    = "A"
   ttl     = 30
